@@ -14,6 +14,12 @@ public class Rectangulo extends FiguraGeometrica implements Calculos{
         return largo;
     }
 
+    public Rectangulo(String nombre, String color, float alto, float largo) {
+        super(nombre, color);
+        this.alto = alto;
+        this.largo = largo;
+    }
+
     public void setLargo(float largo) {
         this.largo = largo;
     }

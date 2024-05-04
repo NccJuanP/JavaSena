@@ -2,6 +2,12 @@ public class Circulo extends FiguraGeometrica implements Calculos{
     private float radio;
     private float circunferencia;
 
+    public Circulo(String nombre, String color, float radio, float circunferencia) {
+        super(nombre, color);
+        this.radio = radio;
+        this.circunferencia = circunferencia;
+    }
+
     public float getRadio() {
         return radio;
     }

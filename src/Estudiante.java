@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-public class Estudiante  extends Persona{
+public class Estudiante  extends Persona implements Trabajador{
     private String Grado;
     public Estudiante(String nombre, int edad, LocalDate nacimiento, String grado) {
         super(nombre, edad, nacimiento);
@@ -14,5 +14,8 @@ public class Estudiante  extends Persona{
         Grado = grado;
     }
 
-
+    @Override
+    public void realizarTarea() {
+        System.out.println("Realizando tarea escolar");
+    }
 }

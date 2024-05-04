@@ -1,5 +1,5 @@
 import java.time.LocalDate;
-public class Persona {
+public class Persona implements Trabajador {
     private String Nombre;
     private int Edad;
     private LocalDate Nacimiento;
@@ -55,5 +55,10 @@ public class Persona {
         }
         setNacimiento(LocalDate.of(anio,getNacimiento().getMonth(), getNacimiento().getDayOfMonth()));
         return "Su fecha de nacimiento es aproximadamente " + getNacimiento();
+    }
+
+    @Override
+    public void realizarTarea() {
+        System.out.println("Realizando tarea laboral");
     }
 }
